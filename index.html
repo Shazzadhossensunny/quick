@@ -28,7 +28,7 @@
 					</ul>
 				</nav>
 			</div>
-			<!-- <div class="menu-toggle"><i class="icofont-navigation-menu"></i></div> -->
+			 <div class="menu-toggle"><i class="icofont-navigation-menu"></i></div>
 		</div>
 	</header>
        <!-- header section -->
@@ -57,7 +57,7 @@
    			</div>
    			<div class="col-3">
    				<div class="projet-title">
-   					<h2>Succesfully completed projjects & ideas</h2>
+   					<h2>Succesfully completed projects & ideas</h2>
    				</div>
    			</div>
    		</div>
@@ -102,13 +102,15 @@
     </footer>
       <!-- footer section -->
 
+       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
 
-
-
-
-
-
-
+            })
+        })
+    </script>
 
 </body>
 </html>

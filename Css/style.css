@@ -41,15 +41,15 @@ padding: 0px 15px;
 }
 
 
-/* .menu-toggle {
+ .menu-toggle {
     color: #000;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 35px;
     position: absolute;
     right: 6%;
     top: 6px;
     display: none;
-}  */
+}  
 
 /* ********************************************************************************
                      Global CSS
@@ -57,6 +57,7 @@ padding: 0px 15px;
 /* header css */
 header{
 	box-shadow: 9px -8px 7px 4px #000;
+    position: relative;
 }
 header .row{
 	align-items: center;
@@ -262,15 +263,156 @@ footer p span{
   .container{
     width: 800px;
   }
+
+  .inner-feature {
+    padding: 35px 15px;   
+}
+
+.inner-feature img {
+    max-height: 110px;
+}
+.inner-feature h3 {
+    font-size: 16px;
+   
+}
+
 }
   @media (max-width: 850px){ 
   .container{
     width: 600px;
   }
+
+  .col-3 {
+    max-width: 50%;
+    flex: 1 0 50%;
+   
+}
+
+  header {
+    padding: 10px;
+
+}
+
+  .menu-toggle{
+        display: block;
+    }
+
+   nav {
+    justify-content: center;
+    display: flex;
+    background: #333;
+    width: 100%;
+    position: absolute;
+    height: calc(70vh - 100%);
+    left: -100%;
+    top: 100%;
+    align-items: center;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+nav.active{
+    left: 0;
+}
+
+nav ul {
+    justify-content: flex-end;
+    display: block !important;
+    text-align: center;
+   
+}
+
+
+   nav ul li a {
+    font-size: 20px;
+    padding: 5px 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.projet-title h2 {
+    font-size: 30px;
+    
+}
+
+.inner-feature {
+    margin: 15px 0px;
+}
  
 }
   @media (max-width: 650px){ 
   .container{
     width: 400px;
   }
+
+  .menu-toggle {
+    line-height: 35px;
+    font-size: 30px;
 }
+
+.banner-setion {
+    padding: 40px 0 0;
+}
+.banner-content h1 {
+    font-size: 30px;
+
+}
+.banner-content p {
+    margin: 10px auto 20px;
+   
+}
+
+.banner-content img {
+    max-width: 250px;
+}
+
+.project-section {
+    padding: 25px 0px;
+}
+
+
+.col-3 {
+    max-width: 100%;
+    flex: 1 0 100%;
+}
+.text-right {
+    text-align: center;
+}
+.projet-title h2 {
+    text-align: center;
+}
+.feature-section {
+    padding: 25px 0px;
+}
+.inner-feature {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.inner-feature img {
+    max-height: 150px;
+}
+
+footer {
+    padding: 5px 0px;
+   
+
+
+
+}
+
+footer p {
+    font-size: 12px;
+    
+}
+footer p span {
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+
+@media (max-width: 449px){ 
+  .container{
+    width: 250px;
+  }
